@@ -76,7 +76,7 @@ public class Pac_java {
 
     private static void mover_per(String mobimiento){
         switch (mobimiento){
-            case "W","w":
+            case "W","w"://mobimiento hacia rriba
                 if (Objects.equals(mapa[pac_pos_int_fila - 1][pac_pos_int_columna], "#")){
                     return;
                 }else if (Objects.equals(mapa[pac_pos_int_fila - 1][pac_pos_int_columna], ".")){
@@ -86,7 +86,7 @@ public class Pac_java {
                 mapa[pac_pos_int_fila][pac_pos_int_columna] = " ";
                 pac_pos_int_fila = pac_pos_int_fila-1;
                 break;
-            case "D","d":
+            case "D","d"://movimiento derecha
                 if (Objects.equals(mapa[pac_pos_int_fila][pac_pos_int_columna + 1], "#")){
                     return;
                 }else if (Objects.equals(mapa[pac_pos_int_fila][pac_pos_int_columna+ 1], ".")){
@@ -96,7 +96,7 @@ public class Pac_java {
                 mapa[pac_pos_int_fila][pac_pos_int_columna] = " ";
                 pac_pos_int_columna = pac_pos_int_columna+1;
                 break;
-            case "A","a":
+            case "A","a"://pobimiento izquierda
                 if (Objects.equals(mapa[pac_pos_int_fila][pac_pos_int_columna - 1], "#")){
                     return;
                 }else if (Objects.equals(mapa[pac_pos_int_fila][pac_pos_int_columna - 1], ".")){
@@ -106,7 +106,7 @@ public class Pac_java {
                 mapa[pac_pos_int_fila][pac_pos_int_columna] = " ";
                 pac_pos_int_columna = pac_pos_int_columna -1;
                 break;
-            case "S","s":
+            case "S","s"://hacia bajo
                 if (Objects.equals(mapa[pac_pos_int_fila + 1][pac_pos_int_columna], "#")){
                     return;
                 }else if (Objects.equals(mapa[pac_pos_int_fila +1][pac_pos_int_columna], ".")){

@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Pac_java {
-    static Random random = new Random();
+    static Random random = new Random();//creamos aleatorio
     static Scanner leer = new Scanner(System.in);
     static int pac_pos_int_fila = 0;
     static int pac_pos_int_columna = 0;
@@ -45,9 +45,6 @@ public class Pac_java {
             {"#",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".","#"},
             {"#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#"}
     };
-
-    //static int mapa_largo = mapa.length;
-    //int mapa_ancho = mapa[0].length;  // Esto obtiene el número de columnas de la primera fila
 
     private static void reconocer_pos_personajes(){
         for (int i = 0; i < mapa.length; i++) {

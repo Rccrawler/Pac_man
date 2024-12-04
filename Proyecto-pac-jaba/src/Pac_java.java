@@ -142,13 +142,19 @@ public class Pac_java {
     }
 
     public static void main(String[] args) {
+
+        System.out.print("el pacman es el caracter: ₾ y los fantasmas son д");
+
         reconocer_pos_personajes();
 
+        System.out.println("mapa");
         inprimir_mapa();
 
     do{
+        System.out.println("pulsa la direcion hacia la que desplazarte w a s d");
         String mobimiento = leer.nextLine();
         mover_per(mobimiento);
+        System.out.println("mapa");
         inprimir_mapa();
     }while (true);
 

@@ -1,1 +1,2 @@
-# Pac_man
+# Pac-man
+Pac-man en java
